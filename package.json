@@ -58,6 +58,7 @@
     "start": "gatsby develop",
     "build": "gatsby build --prefix-paths",
     "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
     "lint": "eslint --fix \"src/**/*.{js,jsx}\""
   },
   "devDependencies": {
@@ -69,6 +70,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
     "gatsby-plugin-remove-trailing-slashes": "^2.1.17",
+    "gh-pages": "^3.1.0",
     "prettier": "^1.19.1",
     "prism-react-renderer": "^1.0.2"
   }
